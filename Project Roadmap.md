@@ -1,10 +1,16 @@
 # Roadmap
 ## Sprint 1
-- [ ] Create Repository on GitHub: Andrew
-- [ ] Assign Tasks to Team Members: Andrew
-- [ ] Create Roadmap: Andrew, Maggie
-- [ ] Go over Seblau's Blackjack Program <https://github.com/seblau/BlackJack-Simulator>: Andrew
-- [ ] Go over David's Blackjack Program <https://github.com/personal-projects-davidw/blackjack>: Maggie 
+- [x] Create Repository on GitHub: Andrew
+- [x] Assign Tasks to Team Members: Andrew
+- [x] Create Roadmap: Andrew, Maggie
+- [x] Create Test Branch: Andrew
+- [x] Go over Seblau's Blackjack Program <https://github.com/seblau/BlackJack-Simulator>: Andrew
+- [x] Go over David's Blackjack Program <https://github.com/personal-projects-davidw/blackjack>: Maggie 
 
 ## Sprint 2
-- [ ] 
+- [ ] Decide on system and os imports
+- [ ] Define main Blackjack function: Andrew
+- [ ] Create pool of cards in list format: Maggie 
+- [ ] Assign cards their value: Maggie
+- [ ] Create For/While loops: Andrew
+- [ ] Decide on further steps and implement into roadmap: Andrew, Maggie
