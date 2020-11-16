@@ -7,7 +7,7 @@ def main():
     # load and set the logo
     logo = pygame.image.load("blackjack-logo.jpg")
     pygame.display.set_icon(logo)
-    pygame.display.set_caption("minimal program")
+    pygame.display.set_caption("Casino Blackjack")
      
     # create a surface on screen that has the size of 240 x 180
     screen = pygame.display.set_mode((800,600))
