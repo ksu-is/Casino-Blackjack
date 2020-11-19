@@ -11,4 +11,22 @@ class card:
             self.score = 1
         else:
             self.score = int(rank)
+    def show(self):
         print(self.suit + self.rank)
+
+class dealer_deck:
+    def __init__(self, deck):
+        self.deck = deck
+    def count(self):
+        return len(self.deck)
+    def display_deck(self):
+        for suit,rank in self.deck:
+            c = card(suit, rank)
+            c.show()
+    def create_deck(self):
+        self.deck = []
+        for suit in suit.list:
+            for rank in rank.list:
+                self.deck.append((suit,rank))
+
+    
