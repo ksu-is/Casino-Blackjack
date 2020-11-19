@@ -11,4 +11,4 @@ class card:
             self.score = 1
         else:
             self.score = int(rank)
-    print(self.suit + self.rank)
+        print(self.suit + self.rank)
