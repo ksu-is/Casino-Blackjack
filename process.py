@@ -35,6 +35,11 @@ class dealer_deck:
     def deal_a_card(self):
         card_deal = self.deck.pop()
         return card(card_deal[0], card_deal[1])
+class hand:
+    def __init__(self, card_list, player):
+        self.card_list = card_list
+        self.player = player
+        self.ace = False
         
 
     
