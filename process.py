@@ -32,6 +32,9 @@ class dealer_deck:
         system("clear")
         print("Dealer Shuffling")
         random.shuffle(self.deck)
+    def deal_a_card(self):
+        card_deal = self.deck.pop()
+        return card(card_deal[0], card_deal[1])
         
 
     
