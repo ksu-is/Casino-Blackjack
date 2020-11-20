@@ -18,5 +18,6 @@
 - [ ] Create For/While loops: Andrew
 - [ ] Decide on further steps and implement into roadmap: Andrew, Maggie
 - [x] Review Allan Lavell's blackjack.py program <https://www.pygame.org/project/640>
+- [x] Create process.py
 
 ## Sprint 3
