@@ -40,6 +40,16 @@ class hand:
         self.card_list = card_list
         self.player = player
         self.ace = False
+
+        for card in self.card_list:
+            if card.rank =="A":
+                self.ace = True
+    def get_score(self):
+        total = 0
+        for cards in self.card_list:
+            total += cards.score
+        return total
+
         
 
     
