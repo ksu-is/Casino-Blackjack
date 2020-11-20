@@ -49,6 +49,11 @@ class hand:
         for cards in self.card_list:
             total += cards.score
         return total
+    def hit(self):
+        new = card_deck.deal_a_card()
+        self.card_list.append(new)
+        if new.rank == "A":
+            self.ace = True
 
         
 
