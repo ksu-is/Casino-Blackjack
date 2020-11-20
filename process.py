@@ -28,5 +28,10 @@ class dealer_deck:
         for suit in suit.list:
             for rank in rank.list:
                 self.deck.append((suit,rank))
+    def shuffle_deck(self):
+        system("clear")
+        print("Dealer Shuffling")
+        random.shuffle(self.deck)
+        
 
     
