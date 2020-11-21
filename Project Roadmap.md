@@ -12,10 +12,10 @@
 - [x] Decide on system and os imports
 - [x] Install pygame
 - [x] Define test window for application
-- [ ] Define main Blackjack function: Andrew
-- [ ] Create pool of cards in list format: Maggie 
-- [ ] Assign cards their value: Maggie
-- [ ] Create For/While loops: Andrew
+- [x] Define main Blackjack function: Andrew
+- [x] Create pool of cards in list format: Maggie 
+- [x] Assign cards their value: Maggie
+- [ ] Define Game state function: Andrew
 - [ ] Decide on further steps and implement into roadmap: Andrew, Maggie
 - [x] Review Allan Lavell's blackjack.py program <https://www.pygame.org/project/640>
 - [x] Create process.py
