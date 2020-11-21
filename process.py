@@ -54,6 +54,12 @@ class hand:
         self.card_list.append(new)
         if new.rank == "A":
             self.ace = True
+    def bust_check(self):
+        if self.get_score() > 21:
+            print("{} busted".format(self.player))
+            return True
+        else:
+            return False
 
         
 
