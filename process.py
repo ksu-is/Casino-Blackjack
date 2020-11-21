@@ -60,6 +60,13 @@ class hand:
             return True
         else:
             return False
+    def bj_check(self):
+        if (self.get_score() == 10 and len(self.card_list) == 2 and self.ace is True):
+            return True
+        else:
+            return False
+            
+        
 
         
 
