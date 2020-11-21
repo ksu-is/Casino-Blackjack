@@ -65,7 +65,10 @@ class hand:
             return True
         else:
             return False
-            
+
+suit_list = [heart, club, spade, diamond]
+pic_cards = ["J", "Q", "K", "A"]
+rank_list = [str(x) for x in range(2, 11)] + pic_cards
         
 
         
