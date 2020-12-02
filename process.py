@@ -65,6 +65,13 @@ class hand:
             return True
         else:
             return False
+def game_state(player_cond, dealer_cond):
+    system("clear")
+    dealer_hand.show_hand(dealer_cond)
+    score = dealer_hand.get_score()
+    bust = dealer_hand.bust_check()
+    if dealer_hand.bj_check() is True and dealer_cond is False:
+        print("You have Blackjack")
 
 
 
