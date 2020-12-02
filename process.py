@@ -66,9 +66,14 @@ class hand:
         else:
             return False
 
+
 suit_list = [heart, club, spade, diamond]
 pic_cards = ["J", "Q", "K", "A"]
 rank_list = [str(x) for x in range(2, 11)] + pic_cards
+
+card_deck = Deck([])
+card_deck.new_deck()
+card_deck.shuffle_deck()
         
 
         
