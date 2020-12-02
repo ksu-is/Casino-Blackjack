@@ -72,6 +72,10 @@ def game_state(player_cond, dealer_cond):
     bust = dealer_hand.bust_check()
     if dealer_hand.bj_check() is True and dealer_cond is False:
         print("You have Blackjack")
+    elif (dealer_cond is False and dealer_hand.ace is True and bust is False and score + 10 < 22):
+        print("Total: " + str(score) + "or" + str(score + 10))
+    elif dealer_cond is False:
+        print("Total: " + str(score))
 
 
 
