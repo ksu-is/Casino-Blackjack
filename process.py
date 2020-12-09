@@ -110,6 +110,16 @@ def dealer_turn():
             game_state(False, False)
             return
 
+def ace_score_adjust(hand):
+    if hand.ace() is False:
+        return hand.get_score()
+    else:
+        unadjusted = hand.get_score()
+        if (unadjusted + 10) > 21 and unadjusted < 22:
+            return hand.get_score()
+        elif (unadjusted + 10) < 22:
+            return (unadjusted + 10)
+
         
         
 
