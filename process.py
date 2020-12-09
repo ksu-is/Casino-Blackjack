@@ -86,6 +86,33 @@ def game_state(player_cond, dealer_cond):
     else:
         print("Total: " + str(score))
 
+def plyr_turn():
+    game_state(False, True)
+    if plyr_hand.bj_check() is True:
+        return True
+    while plyr_hand.get_score() < 22:
+        turn = input("Press 'H' to hit or 'S' to Stand")
+        if turn.lower() == "h":
+            plyr_hand.hit()
+            game_state(False, True)
+        elif turn.lower() == "s":
+            return False
+
+def dealer_turn():
+    game_state(False, True)
+    if dealer_hand.bj_check() is True:
+        return
+    while dealer_hand.get_score() < 33:
+        if dealer_hand.get_score() < 17:
+            dealer_hand.hit()
+            game_state(False, False)
+        else:
+            game_state(False, False)
+            return
+
+        
+        
+
 
 
 suit_list = [heart, club, spade, diamond]
