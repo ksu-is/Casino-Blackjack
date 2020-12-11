@@ -115,10 +115,34 @@ def ace_score_adjust(hand):
         return hand.get_score()
     else:
         unadjusted = hand.get_score()
-        if (unadjusted + 10) > 21 and unadjusted < 22:
+        if (unadjusted + 11) > 21 and unadjusted < 22:
             return hand.get_score()
-        elif (unadjusted + 10) < 22:
-            return (unadjusted + 10)
+        elif (unadjusted + 11) < 22:
+            return (unadjusted + 11)
+
+def win_check(pot, blackjack):
+    if ace_score_adjust(plyr_hand) > 21:
+        winner = "Dealer"
+        pot -= float(bet)
+    elif blackjack is True:
+        winner = "Player"
+        pot += float(bet)
+    elif ace_score_adjust(dealer_hand) > 21:
+        winner = "Player"
+        pot += float(bet)
+    elif ace_score_adjust(dealer_hand) > (plyr_hand):
+        winner = "Dealer"
+        pot -= float(bet)
+    elif ace_score_adjust(dealer_hand) < (plyr_hand):
+        winner = "Player"
+        pot += float(bet)
+    else:
+        winner = "Draw"
+        print("Player and Dealer Draw")
+    if winner != "Draw":
+        print("/n{} wins this hand".format(winner))
+    return pot 
+    
 
         
         
